@@ -1,6 +1,7 @@
 import propTypes from 'prop-types'
 import 'antd/dist/antd.css'
 import Head from 'next/head'
+import wrapper from '../store/configureStore'
 
 const App = ({ Component }) => {
   return (
@@ -18,4 +19,4 @@ App.propTypes = {
   Component: propTypes.elementType.isRequired,
 }
 
-export default App
+export default wrapper.withRedux(App)
