@@ -1,0 +1,5 @@
+
+/prepare/front/node_modules
+/prepare/front/node_modules/*
+/prepare/front/.next
+/prepare/front/.next/*
